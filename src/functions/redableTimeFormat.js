@@ -4,5 +4,5 @@
 export const redableTimeFormat = (data) => { 
     const timeArr = new Date(data * 1000).toLocaleTimeString().split(" "); 
     const temp = timeArr[0].split(":"); 
-    return `${temp[0]}:${temp[1]} ${timeArr[1] ? (timeArr[1]):()}`; 
+    return `${temp[0]}:${temp[1]} ${timeArr[1] ? (timeArr[1]):("")}`; 
 }
