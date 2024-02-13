@@ -1,0 +1,50 @@
+.current-weather-div{ 
+   width: 70%;
+   height: fit-content;  
+    background: var(--darkgrey);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    gap: 0.5rem;
+}
+
+.hor-lin{ 
+    background:var(--grey);
+    width: 100%;
+    height: 1px;
+    /* border: 1px solid red; */
+}
+
+.current-weather-div h1, h3, span{ 
+    margin: 0;
+}
+.loc{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.date{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.temp-img{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+    font-size: 30px;
+    margin: 0;
+}
+img{ 
+    width: 130px;
+    height: 130px;
+}
+.weather-desc{ 
+    text-transform: capitalize;
+}

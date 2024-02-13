@@ -5,9 +5,51 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--black);
+  color: var(--white);
+  overflow-x: hidden;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+:root{ 
+  --darkgrey: #1b1b1b; 
+  --grey: #3c3c3c; 
+  --footer-whites: #d3d3d3; 
+  --white: #e6e6e6; 
+  --black: #0b0b0b;
+  --footer-black: #0f0f0f; 
+  --lightpurple: #b242fd;  
+  --lightblack: #101010; 
+  --lightgrey: #1d1d1d; 
+  --green: #056608; 
+  --lightgreen: #90EE90;
+  --yellow: #F7B500;
+  --lightred: #ff3232 ; 
+  --red:  #880808; 
+  --lightblue: #47a3fe; 
 }
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px var(--darkgrey); 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--grey); 
+  border-radius:5px;
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: ; 
+} */

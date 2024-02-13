@@ -1,0 +1,48 @@
+.five-days-accordian-data{ 
+    overflow-y: scroll;
+    max-height: 400px;
+    width: 100%;
+    border-radius: 20px;
+    overflow-x: hidden;
+}
+.five-day-div{ 
+    width: 90%;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 1rem 0rem;
+    /* border: 1px solid red; */
+}
+.typography{ 
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.typography span{ 
+    margin: 0rem 1rem;
+}
+.img-temp{ 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* gap: 0.5rem; */
+}
+.weather-img{ 
+    width: 60px;
+    height: 60px;
+}
+.weather-img img{ 
+    width: 100%;
+    height: 100%;
+}
+.accordisn-summery{ 
+    background: #000;
+}
+.day-month{ 
+    font-size: 15px;
+    min-width: 70px;
+    text-align: center  ;
+}
+.week-day{ 
+    font-size: 12px;
+}

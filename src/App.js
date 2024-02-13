@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import { useEffect, useState } from 'react';
+import Header from './components/Header';
+import WeatherData from './components/WeatherData';
 import './App.css';
+import Footer from './components/Footer';
 
 function App() {
+  const [searchObj, setSearchObj] = useState({}); 
+  const [isWeatherDataRendered, setWeatherDataRendered] = useState(false); 
+  const onSearchChange =(data)=> { 
+    setSearchObj(data)
+    console.log(data, "this is current location from App.js"); 
+  }
+
+ setTimeout(()=> { 
+  setWeatherDataRendered(true); 
+ }, 3000 ); 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header setSearchObj = {onSearchChange}/> 
+       <WeatherData searchObj = {searchObj}/>
+      {isWeatherDataRendered && (<Footer />)}
     </div>
   );
 }

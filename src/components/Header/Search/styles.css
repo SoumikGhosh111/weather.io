@@ -1,0 +1,15 @@
+
+
+.async-search-func{ 
+    width: 100%;
+    background: transparent
+
+}
+
+@media screen and (orientation: portrait){ 
+    .async-paginate{ 
+        font-size: 15px;
+    }
+}
+
+
