@@ -13,7 +13,7 @@ import CircularProgress from '@mui/material/CircularProgress';
 import "./styles.css";
 
 function WeatherData({ searchObj }) {
-  const localyStoredObj = {}; 
+  let localyStoredObj = {}; 
   localyStoredObj = JSON.parse(localStorage.getItem("searchObj")); 
   const [weatherData, setWeatherData] = useState(null);
   const [forecast, setForeCast] = useState(null);
