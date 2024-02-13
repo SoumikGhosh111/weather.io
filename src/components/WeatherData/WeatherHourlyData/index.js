@@ -15,7 +15,7 @@ function WeatherHourlyData({ foreCast, loading, isDataArr, isWindDataArr }) {
                 let tempArr = new Date(item.dt * 1000).toLocaleTimeString().split(" "); 
                 let timeArr = tempArr[0].split(":");
                 // let time = `${timeArr[0]} ${tempArr[1]}`;
-                 let time = `${timeArr[0]} ${tempArr[1] ? (tempArr[1]):("00")}`;
+                 let time = `${timeArr[0]} ${tempArr[1] ? (tempArr[1]):(": 00")}`;
                 delay+=0.1
                 return{ 
                     ...item, 
@@ -27,7 +27,7 @@ function WeatherHourlyData({ foreCast, loading, isDataArr, isWindDataArr }) {
                 let tempArr = new Date(item.dt * 1000).toLocaleTimeString().split(" "); 
                 let timeArr = tempArr[0].split(":");
                 // let time = `${timeArr[0]} ${tempArr[1]}`;
-                 let time = `${timeArr[0]} ${tempArr[1] ? (tempArr[1]):("00")}`;
+                 let time = `${timeArr[0]} ${tempArr[1] ? (tempArr[1]):(": 00")}`;
                 delay+=0.1
                 return{ 
                     ...item, 
