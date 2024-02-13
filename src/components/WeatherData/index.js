@@ -21,8 +21,8 @@ function WeatherData({ searchObj }) {
   const [loading1, setLoading1] = useState(true);
   const [loading2, setLoading2] = useState(true);
   const [loading3, setLoading3] = useState(true);
-  const [lat, setLat] = useState(localyStoredObj.hasOwnProperty("value") ? (localyStoredObj.value.lat):(22.5726));
-  const [long, setLong] = useState(localyStoredObj.hasOwnProperty("value") ? (localyStoredObj.value.long):(88.3639));
+  const [lat, setLat] = useState(22.5726);
+  const [long, setLong] = useState(88.3639);
   const [name, setName] = useState("empty");
 
   console.log(localyStoredObj, "This is the WEATHER SEARCH OBJ"); 
@@ -35,7 +35,7 @@ function WeatherData({ searchObj }) {
       getData();
       getFiveDaysData();
       getAirQualityData();
-      localStorage.setItem("searchObj", JSON.stringify(searchObj)); 
+      // localStorage.setItem("searchObj", JSON.stringify(searchObj)); 
     }
   }, [searchObj, lat, long]);
 
