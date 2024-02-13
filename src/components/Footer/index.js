@@ -45,7 +45,7 @@ function Footer() {
                         
                         data={{
                             text: "Why fear when Weather.io is here ",
-                            url: "Eta amar Project Baler",
+                            url: "https://weather-io-sg.vercel.app",
                             title: "Weather.io",
                         }}
                         onClick={() => console.log("shared successfully!")}
