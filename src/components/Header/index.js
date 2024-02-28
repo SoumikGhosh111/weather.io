@@ -12,6 +12,9 @@ import "./styles.css";
 //     }, 
 //     label: ,
 // }
+
+
+
 function Header({setSearchObj}) {
     // const [position, setPoition] = useState(null); 
     const [error, setError] = useState(""); 
